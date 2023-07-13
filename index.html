@@ -18,8 +18,33 @@
     />
   </head>
   <body class="light-theme">
-    <!-- =========== Header Start =========== -->
+    <!-- =========== Header menubar-menu-item (1100px) =========== -->
+    <div class="menubar-menu-group" id="menubar-menu-group">
+      <div class="menu-item">
+        <div class="close-btn">
+          <button>
+            <ion-icon name="close" onclick="closeNav()"></ion-icon>
+          </button>
+        </div>
+        <div class="menu-item-group">
+          <div class="main-menu">
+            <h1>Main Menu</h1>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
+          </div>
+          <hr />
+          <div class="topics">
+            <h1>Topics</h1>
+            <a href="#">Database</a>
+            <a href="#">Accessibiliyt</a>
+            <a href="#">Web Developer</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- =========== Header Start =========== -->
     <header>
       <div class="header-item">
         <div class="left-header">
@@ -27,11 +52,9 @@
         </div>
         <div class="right-header">
           <div class="nav-item">
-            
-              <a href="#">Home</a>
-              <a href="#">About Me</a>
-              <a href="#">Contact</a>
-            
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Contact</a>
           </div>
           <div class="btn-theme">
             <button class="btn-icon">
@@ -42,8 +65,27 @@
               <ion-icon name="sunny"></ion-icon>
             </button>
           </div>
+          <!-- =========== Header menubar (1100px) =========== -->
+          <div class="menubar">
+            <div class="menubar-item">
+              <div class="btn-icon" id="change-theme-menubar">
+                <button class="moon" id="moon">
+                  <ion-icon name="moon"></ion-icon>
+                </button>
+                <button class="sunny" id="sunny">
+                  <ion-icon name="sunny"></ion-icon>
+                </button>
+              </div>
+              <div class="menu">
+                <button class="menu-btn" onclick="openNav()">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="hero">
         <div class="left">
           <h1>Hi,i'm <span>Sahand edc </span>.</h1>
@@ -68,8 +110,6 @@
     <!-- =========== Main Start =========== -->
 
     <main>
-     
-
       <div class="main">
         <div class="container">
           <div class="blog">
@@ -468,24 +508,21 @@
                 <ul>
                   <li>
                     <ion-icon
-                        name="logo-facebook"
-                        class="logo-facebook"
-                      ></ion-icon
-                    >
+                      name="logo-facebook"
+                      class="logo-facebook"
+                    ></ion-icon>
                   </li>
                   <li>
                     <ion-icon
-                        name="logo-twitter"
-                        class="logo-twitter"
-                      ></ion-icon
-                    >
+                      name="logo-twitter"
+                      class="logo-twitter"
+                    ></ion-icon>
                   </li>
                   <li>
                     <ion-icon
-                        name="logo-discord"
-                        class="logo-discord"
-                      ></ion-icon
-                    >
+                      name="logo-discord"
+                      class="logo-discord"
+                    ></ion-icon>
                   </li>
                 </ul>
               </div>
@@ -498,11 +535,11 @@
                 <p>
                   Subscribe to our newsletter to be among the first to keep up
                   with the latest updates.
-                  <form action="">
-                    <input name="email" type="email" placeholder="Email Adress" />
-                    <button>Subscribe</button>
-                  </form>
                 </p>
+                <form action="">
+                  <input name="email" type="email" placeholder="Email Adress" />
+                  <button>Subscribe</button>
+                </form>
               </div>
             </div>
           </div>
@@ -518,7 +555,10 @@
       <div class="footer-container">
         <div class="left">
           <h1>Sahand <span>Edc</span></h1>
-          <p>Learn about Web accessibility, Web performance, and Database management.</p>
+          <p>
+            Learn about Web accessibility, Web performance, and Database
+            management.
+          </p>
         </div>
         <div class="right">
           <div class="left-group">

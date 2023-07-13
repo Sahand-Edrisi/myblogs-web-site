@@ -69,19 +69,18 @@ html {
   --accent: hsl(229, 94%, 62%);
 }
 /*  ========== Scrollbar ==========*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 20px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px gray;
   border: 10px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--accent);
   border-radius: 10px;
   border: 2px solid var(--background-primary);
 }
-
 
 /*  ========== Header ==========*/
 header {
@@ -167,12 +166,102 @@ header {
   z-index: 100;
   transition: all 0.5s ease-in-out;
 }
-/* .btn-theme .btn-icon .change-them:hover {
-  transform: translate(21px);
-} */
 ion-icon {
   font-size: 1rem;
 }
+/*  ========== header-menubar ==========*/
+.header-item .right-header .menubar {
+  display: none;
+}
+.header-item .right-header .menubar .menubar-item{
+  display: flex;
+}
+.header-item .right-header .menubar .menubar-item .btn-icon {
+  display: flex;
+}
+.header-item .right-header .menubar .menubar-item .btn-icon .moon {
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1rem;
+  border: none;
+  background-color: var(--background-secondary);
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.dark-theme .header-item .right-header .menubar .menubar-item button ion-icon{
+  color: aliceblue;
+}
+.header-item .right-header .menubar .menubar-item .btn-icon .sunny {
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1rem;
+  border: none;
+  z-index: 1;
+  background-color: var(--background-secondary);
+  align-items: center;
+}
+.header-item .right-header .menubar .menubar-item .menu .menu-btn {
+  border-radius: 50%;
+  display: flex;
+  margin-left: 1rem;
+  border: none;
+  background-color: var(--background-secondary);
+  align-items: center;
+}
+.header-item .right-header .menubar .menubar-item button ion-icon {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+/* =========== Header menubar-menu-item (1100px) =========== */
+
+.menubar-menu-group{
+  position: fixed;
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-primary);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.menubar-menu-group .menu-item .close-btn{
+  display: flex;
+  justify-content: end;
+  margin: 1rem;
+}
+.menubar-menu-group .menu-item .close-btn button{
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+.menubar-menu-group .menu-item .close-btn button ion-icon {
+  font-size: 1.8rem;
+  margin: 0.5rem;
+}
+.menubar-menu-group .menu-item .menu-item-group{
+  margin: 1rem;
+}
+.menubar-menu-group .menu-item .menu-item-group .main-menu{
+  margin: 1rem;
+}
+.menubar-menu-group .menu-item .menu-item-group .topics{
+  margin: 1rem;
+}
+.menubar-menu-group .menu-item .menu-item-group a{
+  color: var(--foreground-secondary);
+  margin: .5rem 0;
+  display: flex;width: 10%;
+}
+.menubar-menu-group .menu-item .menu-item-group a:hover{
+  color: var(--accent);
+}
+
 
 /*  ========== header-hero ==========*/
 
@@ -187,13 +276,13 @@ ion-icon {
   padding-top: 2rem;
 }
 
-.bg-img {
+.hero .right .bg-img {
   position: absolute;
   width: 35rem;
   height: 40rem;
   opacity: 0.4;
 }
-.bg-hero-outline {
+.hero .right .bg-hero-outline {
   position: absolute;
   background-color: var(--action-primary);
   margin: 9rem 4.4rem;
@@ -201,7 +290,7 @@ ion-icon {
   height: 27rem;
   border-radius: 50%;
 }
-.bg-hero {
+.hero .right .bg-hero {
   position: absolute;
   background-color: var(--accent);
   height: 27rem;
@@ -209,7 +298,7 @@ ion-icon {
   padding: 14.3rem;
   border-radius: 50%;
 }
-.img-hero {
+.hero .right .img-hero {
   position: absolute;
   margin: 1rem 3rem;
   border-radius: 50%;

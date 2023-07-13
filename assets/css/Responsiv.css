@@ -1,0 +1,33 @@
+@media only screen and (max-width:1100px) {
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .hero .right{
+        display: none;
+    }
+    .hero .left{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .left h1{
+        font-size: 4rem;
+    }
+    .hero .left p {
+        font-size: 3rem;
+      }
+      .hero .left .btn-contact {
+        font-size: 2rem;
+      }
+      .hero .left .btn-AboutMe{
+        font-size: 2rem;
+      }
+      .right-header .btn-theme{
+        display: none;
+      }
+      .header-item .right-header .menubar{
+        display: block;
+      }
+}
