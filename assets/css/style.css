@@ -224,7 +224,7 @@ ion-icon {
   padding: 0;
   background-color: var(--background-primary);
   width: 100%;
-  height: 100%;
+  height: 2000px;
   display: none;
 }
 .menubar-menu-group .menu-item-group{
