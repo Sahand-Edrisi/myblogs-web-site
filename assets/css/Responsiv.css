@@ -106,4 +106,10 @@
   .header-item .right-header .menubar .menubar-item button ion-icon {
     font-size: 1rem;
   }
+  .menubar-menu-group .menu-item .close-btn button ion-icon {
+    font-size: 1rem;
+  }
+  .menubar-menu-group .menu-item .menu-item-group {
+    font-size: .7rem;
+  }
 }
