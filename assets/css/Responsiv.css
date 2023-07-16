@@ -112,4 +112,14 @@
   .menubar-menu-group .menu-item .menu-item-group {
     font-size: .7rem;
   }
+ 
+}
+
+@media only screen and (max-height:600px){
+  .menubar-menu-group .menu-item-group{
+    flex-direction: row;
+  }
+  .menubar-menu-group .menu-item .menu-item-group {
+    font-size: .5rem;
+  }
 }
