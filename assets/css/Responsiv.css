@@ -1,33 +1,109 @@
-@media only screen and (max-width:1100px) {
-    .hero{
-        grid-template-columns: 1fr;
-    }
-    .hero .right{
-        display: none;
-    }
-    .hero .left{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .hero .left h1{
-        font-size: 4rem;
-    }
-    .hero .left p {
-        font-size: 3rem;
-      }
-      .hero .left .btn-contact {
-        font-size: 2rem;
-      }
-      .hero .left .btn-AboutMe{
-        font-size: 2rem;
-      }
-      .right-header .btn-theme{
-        display: none;
-      }
-      .header-item .right-header .menubar{
-        display: block;
-      }
+@media only screen and (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero .right {
+    display: none;
+  }
+  .hero .left {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .left .btn-contact {
+    font-size: 2rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 2rem;
+  }
+  .right-header .btn-theme {
+    display: none;
+  }
+  .right-header .nav-item {
+    display: none;
+  }
+  .header-item .right-header .menubar {
+    display: block;
+  }
+  .main .asid {
+    display: none;
+  }
+  .main .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero .left h1 {
+    font-size: 2.5rem;
+  }
+  .hero .left p {
+    font-size: 2rem;
+  }
+  .hero .left .btn-contact {
+    font-size: 1.5rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero .left h1 {
+    font-size: 2rem;
+  }
+  .hero .left p {
+    font-size: 1.5rem;
+  }
+  .hero .left .btn-contact {
+    font-size: 1rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 1rem;
+  }
+  .main .container .blog .blog-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-container .left {
+    grid-template-columns: 1fr;
+  }
+  .footer-container .left h1 {
+    margin: auto;
+  }
+  .footer-container .left p {
+    margin: auto;
+    text-align: center;
+  }
+  .footer-container .right {
+    grid-template-columns: 1fr;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .hero .left h1 {
+    font-size: 1.5rem;
+  }
+  .hero .left p {
+    font-size: 1rem;
+  }
+  .hero .left .btn-contact {
+    font-size: 0.8rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 0.8rem;
+  }
+  .header-item .left-header .name {
+    font-size: 1rem;
+  }
+  .header-item .right-header .menubar .menubar-item button ion-icon {
+    font-size: 1rem;
+  }
 }

@@ -1,3 +1,4 @@
+// cheange-theme
 document.body.classList.add("light.theme");
 
 document.getElementById("change-theme").addEventListener("click", (e) => {
@@ -12,6 +13,7 @@ document.getElementById("change-theme").addEventListener("click", (e) => {
   }
 });
 
+// Header menubar-menu-item-cheange-theme (1100px)
 document
   .getElementById("change-theme-menubar")
   .addEventListener("click", (e) => {
@@ -24,11 +26,10 @@ document
     }
   });
 
+// Header menubar-menu-item (1100px)
 
-
-  
 function openNav() {
-  document.getElementById("menubar-menu-group").style = " display:block;";
+  document.getElementById("menubar-menu-group").style = " display:block ;";
 }
 
 function closeNav() {
