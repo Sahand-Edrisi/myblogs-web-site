@@ -714,8 +714,9 @@ footer {
   background-color: var(--background-primary);
 }
 .footer-container .left {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
 }
 .footer-container .left h1 span {
   color: var(--accent);
