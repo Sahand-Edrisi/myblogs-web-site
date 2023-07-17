@@ -115,12 +115,10 @@
  
 }
 
-@media only screen and (max-height:460px){
-  .menubar-menu-group .menu-item-group{
+@media only screen and (max-height:490px){
+  .menubar-menu-group .menu-item .menu-item-group{
     flex-direction: row;
-   }
-  .menubar-menu-group .menu-item .menu-item-group {
     font-size: .5rem;
     justify-content: center;
-  }
+   }
 }
