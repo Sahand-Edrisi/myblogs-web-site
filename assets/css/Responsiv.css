@@ -117,8 +117,6 @@
 
 @media only screen and (max-height:490px){
   .menubar-menu-group .menu-item .menu-item-group{
-    flex-direction: row;
-    font-size: .5rem;
-    justify-content: center;
+    
    }
 }

@@ -253,6 +253,12 @@ ion-icon {
 .menubar-menu-group .menu-item .menu-item-group .main-menu {
   margin: 1rem;
 }
+.menubar-menu-group .menu-item .menu-item-group .main-menu h1{
+  font-size: .8rem;
+}
+.menubar-menu-group .menu-item .menu-item-group .main-menu a{
+  font-size: .6rem;
+}
 .menubar-menu-group .menu-item .menu-item-group .topics {
   margin: 1rem;
 }
@@ -261,6 +267,12 @@ ion-icon {
   margin: 0.5rem 0;
   display: flex;
   width: 100%;
+}
+.menubar-menu-group .menu-item .menu-item-group .topics h1{
+  font-size: .8rem;
+}
+.menubar-menu-group .menu-item .menu-item-group .topics a{
+  font-size: .6rem;
 }
 .menubar-menu-group .menu-item .menu-item-group a:hover {
   color: var(--accent);
