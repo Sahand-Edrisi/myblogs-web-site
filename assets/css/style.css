@@ -260,7 +260,7 @@ ion-icon {
   color: var(--foreground-secondary);
   margin: 0.5rem 0;
   display: flex;
-  width: 10%;
+  width: 30%;
 }
 .menubar-menu-group .menu-item .menu-item-group a:hover {
   color: var(--accent);
