@@ -227,7 +227,7 @@ ion-icon {
   height: 2000px;
   display: none;
 }
-.menubar-menu-group .menu-item-group{
+.menubar-menu-group .menu-item-group {
   display: flex;
   flex-direction: column;
 }
@@ -253,11 +253,11 @@ ion-icon {
 .menubar-menu-group .menu-item .menu-item-group .main-menu {
   margin: 1rem;
 }
-.menubar-menu-group .menu-item .menu-item-group .main-menu h1{
-  font-size: .8rem;
+.menubar-menu-group .menu-item .menu-item-group .main-menu h1 {
+  font-size: 0.8rem;
 }
-.menubar-menu-group .menu-item .menu-item-group .main-menu a{
-  font-size: .6rem;
+.menubar-menu-group .menu-item .menu-item-group .main-menu a {
+  font-size: 0.6rem;
 }
 .menubar-menu-group .menu-item .menu-item-group .topics {
   margin: 1rem;
@@ -268,11 +268,11 @@ ion-icon {
   display: flex;
   width: 100%;
 }
-.menubar-menu-group .menu-item .menu-item-group .topics h1{
-  font-size: .8rem;
+.menubar-menu-group .menu-item .menu-item-group .topics h1 {
+  font-size: 0.8rem;
 }
-.menubar-menu-group .menu-item .menu-item-group .topics a{
-  font-size: .6rem;
+.menubar-menu-group .menu-item .menu-item-group .topics a {
+  font-size: 0.6rem;
 }
 .menubar-menu-group .menu-item .menu-item-group a:hover {
   color: var(--accent);
@@ -338,14 +338,23 @@ ion-icon {
   opacity: 0.7;
   font-size: 2rem;
 }
+.hero .left .btn-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 70%;
+  padding: 1rem 0;
+}
 .hero .left .btn-contact {
   border-radius: 20px;
   font-size: 1rem;
-  margin: 1rem;
-  padding: 0.6rem 1.5rem;
+  width: 8rem;
+  height: 3rem;
   background-color: var(--accent);
   color: var(--background-primary);
   border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero .left .btn-contact:hover {
   background-color: var(--foreground-secondary);
@@ -355,11 +364,14 @@ ion-icon {
 .hero .left .btn-AboutMe {
   border-radius: 20px;
   font-size: 1rem;
-  margin: 1rem;
-  padding: 0.6rem 1.5rem;
+  width: 8rem;
+  height: 3rem;
   background-color: var(--background-primary);
   color: var(--foreground-secondary);
   border: 1px solid var(--foreground-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero .left .btn-AboutMe:hover {
   background-color: var(--background-primary);
@@ -420,7 +432,6 @@ main {
 .main .container .blog .blog-box .left .img {
   overflow: hidden;
   border-radius: 5px;
-  height: 18rem;
 }
 .main .container .blog .blog-box .left .img img {
   object-fit: cover;
@@ -429,11 +440,10 @@ main {
   padding: 0.5rem 2rem;
   color: var(--foreground-primary);
 }
-.main .container .blog .blog-box .right button {
+.main .container .blog .blog-box .right .btn-database button {
   margin: 0.2rem 0rem;
   border-radius: 8px;
   padding: 0.2rem 1rem;
-  border: 0;
   background-color: var(--action-primary);
   color: var(--foreground-secondary);
 }
@@ -481,16 +491,15 @@ main {
   font-size: 1rem;
 }
 .main .container .blog .blog-box .profile .time-seen {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: flex-end;
 }
-.main .container .blog .blog-box .profile .time-seen ion-icon {
-  
-
+.main .container .blog .blog-box .profile .time-seen .time-outline {
+  padding: 10px 0;
 }
 .main .container .blog .blog-box .profile .time-seen p {
   opacity: 0.7;
-
+  padding: 4.5px 5px;
 }
 
 .main .container .blog button {
@@ -538,7 +547,7 @@ main {
   font-size: 1.3rem;
 }
 .asid .topics .topics-item p {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-size: 1.1rem;
   font-weight: 600;
   opacity: 0.7;
@@ -629,7 +638,7 @@ main {
 }
 .asid .tallk .tallk-box {
   background-color: var(--background-primary);
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   border-radius: 10px;
 }
 .asid .tallk .tallk-box p {
@@ -727,8 +736,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   max-width: 1150px;
   margin: auto;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding: 6rem 0;
   background-color: var(--background-primary);
 }
 .footer-container .left {

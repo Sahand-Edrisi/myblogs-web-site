@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1100px) {
   .hero {
     grid-template-columns: 1fr;
+    padding: 2rem 0;
   }
   .hero .right {
     display: none;
@@ -12,12 +13,9 @@
     justify-content: center;
     align-items: center;
   }
-
-  .hero .left .btn-contact {
-    font-size: 2rem;
-  }
-  .hero .left .btn-AboutMe {
-    font-size: 2rem;
+  .hero .left .btn-group {
+    width: 100%;
+    justify-content: space-evenly;
   }
   .right-header .btn-theme {
     display: none;
@@ -42,12 +40,6 @@
   }
   .hero .left p {
     font-size: 2rem;
-  }
-  .hero .left .btn-contact {
-    font-size: 1.5rem;
-  }
-  .hero .left .btn-AboutMe {
-    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -87,7 +79,10 @@
     text-align: center;
     margin: 2rem 0;
   }
-  .footer-container .right .right-group{
+  .footer-container {
+    padding: 2rem 0;
+  }
+  .footer-container .right .right-group {
     margin-top: 2rem;
   }
 }
@@ -100,9 +95,13 @@
   }
   .hero .left .btn-contact {
     font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
   }
   .hero .left .btn-AboutMe {
     font-size: 0.8rem;
+    width: 6rem;
+    height: 2rem;
   }
   .header-item .left-header .name {
     font-size: 1rem;
@@ -114,7 +113,123 @@
     font-size: 1rem;
   }
   .menubar-menu-group .menu-item .menu-item-group {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
- 
+  .main .container .blog .blog-box .right button {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main .container .blog .blog-box .profile .name-date p {
+    font-size: 0.7rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen ion-icon {
+    font-size: 0.7rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen p {
+    font-size: 0.7rem;
+    padding: 3px 5px;
+  }
+  .main .container .blog .blog-box .profile img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen .time-outline {
+    padding: 8px 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero .left h1 {
+    font-size: 1rem;
+  }
+  .hero .left p {
+    font-size: 0.8rem;
+  }
+  .hero .left .btn-contact {
+    font-size: 0.6rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 0.6rem;
+  }
+  .header-item .left-header .name {
+    font-size: 0.8rem;
+  }
+  .header-item .right-header .menubar .menubar-item button ion-icon {
+    font-size: 0.8rem;
+  }
+  .menubar-menu-group .menu-item .close-btn button ion-icon {
+    font-size: 0.8rem;
+  }
+  .menubar-menu-group .menu-item .menu-item-group {
+    font-size: 0.7rem;
+  }
+  .main .container .blog .blog-box .right a {
+    font-size: 0.8rem;
+  }
+  .main .container .blog .blog-box .right p {
+    font-size: 0.8rem;
+  }
+  .main .container .blog .blog-box .right button {
+    font-size: 0.8rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen .time-outline {
+    padding: 8px 0;
+  }
+  .main .container .blog .blog-box .profile .time-seen p {
+    padding: 4px 5px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .main .container .blog .blog-box .profile .name-date p {
+    font-size: 0.6rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen ion-icon {
+    font-size: 0.6rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen p {
+    font-size: 0.6rem;
+    padding: 5.5px 5px;
+  }
+  .main .container .blog .blog-box .profile .name-date {
+    padding: 0 8px;
+  }
+  .main .container .blog .blog-box .profile .time-seen .time-outline {
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .main .container .blog .blog-box .profile .name-date p {
+    font-size: 0.5rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen ion-icon {
+    font-size: 0.5rem;
+  }
+  .main .container .blog .blog-box .profile .time-seen p {
+    font-size: 0.5rem;
+    padding: 0.5px 5px;
+  }
+  .main .container .blog .blog-box .profile .time-seen .time-outline {
+    padding: 5px 0;
+  }
+
+  .main .container .blog .blog-box .profile .name-date {
+    padding: 0 8px;
+  }
+
+  .hero .left .btn-contact {
+    font-size: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+  }
+  .hero .left .btn-AboutMe {
+    font-size: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+  }
+
+  .main .container .blog .blog-box .profile img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
