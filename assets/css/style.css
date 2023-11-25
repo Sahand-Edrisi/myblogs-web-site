@@ -82,44 +82,49 @@ html {
   border: 2px solid var(--background-primary);
 }
 
-/*  ========== Header ==========*/
-header {
-  background-color: var(--background-primary);
+/*  ========== menubar ==========*/
+.menubar{
+  background-color: var(--background-secondary);
+  position: fixed;
+  width: -webkit-fill-available;
+  z-index: 100;
 }
-.header-item {
+
+.menubar-item{
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1150px;
-  margin: auto;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
+  
 }
 
-.header-item .left-header .name {
+.menubar .left-menubar .name {
   font-weight: 900;
   font-size: 1.4rem;
 }
-.header-item .left-header .name span {
+.menubar .left-menubar .name span {
   color: var(--accent);
 }
-.header-item .left-header .name {
+.menubar .left-menubar .name {
   color: var(--foreground-primary);
 }
 
-.right-header {
+.right-menubar {
   display: flex;
   justify-content: end;
   font-size: 1rem;
 }
-.right-header .nav-item a {
+.right-menubar .nav-item a {
   color: var(--foreground-primary);
   font-weight: 600;
   opacity: 0.7;
   padding: 0 1rem;
 }
-.right-header .nav-item a:hover {
+.right-menubar .nav-item a:hover {
   color: var(--accent);
 }
-.light-theme .right-header .btn-theme .btn-icon {
+.light-theme .right-menubar .btn-theme .btn-icon {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -136,7 +141,7 @@ header {
   height: 1.6rem;
   color: white;
 }
-.dark-theme .right-header .btn-theme .btn-icon {
+.dark-theme .right-menubar .btn-theme .btn-icon {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -153,14 +158,14 @@ header {
   height: 1.6rem;
   color: white;
 }
-.right-header .btn-theme .btn-icon .change-theme {
+.right-menubar .btn-theme .btn-icon .change-theme {
   position: absolute;
   width: 45px;
   height: 1.7rem;
   border-radius: 60px;
   padding-right: 3rem;
 }
-.right-header .btn-theme .btn-icon .change-theme ion-icon {
+.right-menubar .btn-theme .btn-icon .change-theme ion-icon {
   position: absolute;
   font-size: 1.7rem;
   z-index: 100;
@@ -169,17 +174,18 @@ header {
 ion-icon {
   font-size: 1rem;
 }
-/*  ========== header-menubar ==========*/
-.header-item .right-header .menubar {
+/* =========== Header menubar-menu-item (1100px) =========== */
+
+.menubar .right-menubar .icon {
   display: none;
 }
-.header-item .right-header .menubar .menubar-item {
+.menubar .right-menubar .icon .icon-item {
   display: flex;
 }
-.header-item .right-header .menubar .menubar-item .btn-icon {
+.menubar .right-menubar .icon .icon-item .btn-icon {
   display: flex;
 }
-.header-item .right-header .menubar .menubar-item .btn-icon .moon {
+.menubar .right-menubar .icon .icon-item .btn-icon .moon {
   border-radius: 50%;
   display: flex;
   margin-left: 1rem;
@@ -189,10 +195,10 @@ ion-icon {
   position: absolute;
   z-index: 2;
 }
-.dark-theme .header-item .right-header .menubar .menubar-item button ion-icon {
+.dark-theme .menubar .right-menubar .icon .icon-item button ion-icon {
   color: aliceblue;
 }
-.header-item .right-header .menubar .menubar-item .btn-icon .sunny {
+.menubar .right-menubar .icon .icon-item .btn-icon .sunny {
   border-radius: 50%;
   display: flex;
   margin-left: 1rem;
@@ -201,7 +207,7 @@ ion-icon {
   background-color: var(--background-secondary);
   align-items: center;
 }
-.header-item .right-header .menubar .menubar-item .menu .menu-btn {
+.menubar .right-menubar .icon .icon-item .menu .menu-btn {
   border-radius: 50%;
   display: flex;
   margin-left: 1rem;
@@ -209,18 +215,18 @@ ion-icon {
   background-color: var(--background-secondary);
   align-items: center;
 }
-.header-item .right-header .menubar .menubar-item button ion-icon {
+.menubar .right-menubar .icon .icon-item button ion-icon {
   font-size: 1.8rem;
   margin: 0.5rem;
   cursor: pointer;
 }
 
-/* =========== Header menubar-menu-item (1100px) =========== */
+
 
 .menubar-menu-group {
   position: fixed;
   z-index: 9999;
-  margin: 0;
+  margin: -6rem 0;
   padding: 0;
   background-color: var(--background-primary);
   width: 100%;
@@ -278,26 +284,30 @@ ion-icon {
   color: var(--accent);
 }
 
-/*  ========== header-hero ==========*/
+/*  ========== hero ==========*/
 
 .hero {
+  background-color: var(--background-primary);
+  padding-top: 6rem;
+}
+.hero-item{
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1150px;
   margin: auto;
 }
-.hero .right {
+.hero-item .right {
   height: 44rem;
   padding-top: 2rem;
 }
 
-.hero .right .bg-img {
+.hero-item .right .bg-img {
   position: absolute;
   width: 35rem;
   height: 40rem;
   opacity: 0.4;
 }
-.hero .right .bg-hero-outline {
+.hero-item .right .bg-hero-outline {
   position: absolute;
   background-color: var(--action-primary);
   margin: 9rem 4.4rem;
@@ -305,7 +315,7 @@ ion-icon {
   height: 27rem;
   border-radius: 50%;
 }
-.hero .right .bg-hero {
+.hero-item .right .bg-hero {
   position: absolute;
   background-color: var(--accent);
   height: 27rem;
@@ -313,38 +323,38 @@ ion-icon {
   padding: 14.3rem;
   border-radius: 50%;
 }
-.hero .right .img-hero {
+.hero-item .right .img-hero {
   position: absolute;
   margin: 1rem 3rem;
   border-radius: 50%;
   height: 36rem;
 }
 
-.hero .left {
+.hero-item .left {
   margin-top: 5rem;
   padding-left: 2rem;
   padding-right: 1.5rem;
 }
-.hero .left h1 {
+.hero-item .left h1 {
   font-size: 3rem;
   font-weight: 900;
   color: var(--foreground-primary);
 }
-.hero .left h1 span {
+.hero-item .left h1 span {
   color: var(--accent);
 }
-.hero .left p {
+.hero-item .left p {
   color: var(--foreground-primary);
   opacity: 0.7;
   font-size: 2rem;
 }
-.hero .left .btn-group {
+.hero-item .left .btn-group {
   display: grid;
   grid-template-columns: auto auto;
   width: 70%;
   padding: 1rem 0;
 }
-.hero .left .btn-contact {
+.hero-item .left .btn-contact {
   border-radius: 20px;
   font-size: 1rem;
   width: 8rem;
@@ -356,12 +366,12 @@ ion-icon {
   align-items: center;
   justify-content: center;
 }
-.hero .left .btn-contact:hover {
+.hero-item .left .btn-contact:hover {
   background-color: var(--foreground-secondary);
   color: var(--action-primary);
   border: 1px solid var(--foreground-secondary);
 }
-.hero .left .btn-AboutMe {
+.hero-item .left .btn-AboutMe {
   border-radius: 20px;
   font-size: 1rem;
   width: 8rem;
@@ -373,7 +383,7 @@ ion-icon {
   align-items: center;
   justify-content: center;
 }
-.hero .left .btn-AboutMe:hover {
+.hero-item .left .btn-AboutMe:hover {
   background-color: var(--background-primary);
   color: var(--accent);
   border: 1px solid var(--accent);
