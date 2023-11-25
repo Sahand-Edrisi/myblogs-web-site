@@ -38,9 +38,8 @@ html {
   outline-offset: 4px;
 }
 
+/*=============== light theme colors  ===============*/
 .light-theme {
-  /*=============== light theme colors  ===============*/
-
   --background-primary: hsl(0, 0%, 100%);
   --background-secondary: hsl(210, 100%, 98%);
 
@@ -54,8 +53,8 @@ html {
   --accent: hsl(229, 94%, 62%);
 }
 
+/*=============== dark theme colors  ===============*/
 .dark-theme {
-  /*=============== dark theme colors  ===============*/
   --background-primary: hsl(218, 23%, 23%);
   --background-secondary: hsl(220, 26%, 14%);
 
@@ -68,6 +67,7 @@ html {
 
   --accent: hsl(229, 94%, 62%);
 }
+
 /*  ========== Scrollbar ==========*/
 ::-webkit-scrollbar {
   width: 20px;
@@ -83,22 +83,19 @@ html {
 }
 
 /*  ========== menubar ==========*/
-.menubar{
+.menubar {
   background-color: var(--background-secondary);
   position: fixed;
   width: -webkit-fill-available;
   z-index: 100;
 }
-
-.menubar-item{
+.menubar-item {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1150px;
   padding: 1rem 2rem;
-  
 }
-
 .menubar .left-menubar .name {
   font-weight: 900;
   font-size: 1.4rem;
@@ -109,7 +106,6 @@ html {
 .menubar .left-menubar .name {
   color: var(--foreground-primary);
 }
-
 .right-menubar {
   display: flex;
   justify-content: end;
@@ -174,8 +170,8 @@ html {
 ion-icon {
   font-size: 1rem;
 }
-/* =========== Header menubar-menu-item (1100px) =========== */
 
+/* ===========  menubar-menu-item (1100px) =========== */
 .menubar .right-menubar .icon {
   display: none;
 }
@@ -220,9 +216,6 @@ ion-icon {
   margin: 0.5rem;
   cursor: pointer;
 }
-
-
-
 .menubar-menu-group {
   position: fixed;
   z-index: 9999;
@@ -285,12 +278,11 @@ ion-icon {
 }
 
 /*  ========== hero ==========*/
-
 .hero {
   background-color: var(--background-primary);
   padding-top: 6rem;
 }
-.hero-item{
+.hero-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1150px;
@@ -300,7 +292,6 @@ ion-icon {
   height: 44rem;
   padding-top: 2rem;
 }
-
 .hero-item .right .bg-img {
   position: absolute;
   width: 35rem;
@@ -329,7 +320,6 @@ ion-icon {
   border-radius: 50%;
   height: 36rem;
 }
-
 .hero-item .left {
   margin-top: 5rem;
   padding-left: 2rem;
@@ -390,7 +380,6 @@ ion-icon {
 }
 
 /*  ========== main ==========*/
-
 main {
   background-color: var(--background-secondary);
 }
@@ -400,8 +389,8 @@ main {
   max-width: 1150px;
   margin: auto;
 }
-/*  ========== main-blog ==========*/
 
+/*  ========== main-blog ==========*/
 .main .container .blog {
   margin-top: 3rem;
   margin-left: 2rem;
@@ -424,7 +413,6 @@ main {
   width: 0.3rem;
   margin-right: 2rem;
 }
-
 .main .container .blog .blog-box {
   background-color: var(--background-primary);
   display: grid;
@@ -435,7 +423,6 @@ main {
 .main .container .blog .blog-box:hover {
   transform: translatey(-5px);
 }
-
 .main .container .blog .blog-box .left {
   padding: 0.5rem 0.5rem;
 }
@@ -511,7 +498,6 @@ main {
   opacity: 0.7;
   padding: 4.5px 5px;
 }
-
 .main .container .blog button {
   border-radius: 30px;
   margin: auto;
@@ -525,11 +511,9 @@ main {
 .main .container .blog button:hover {
   background-color: var(--accent);
 }
-
 /*  ========== main-asid ==========*/
 
 /*  ========== main-asid-topics ==========*/
-
 .asid {
   width: 400px;
 }
@@ -542,12 +526,10 @@ main {
   font-weight: 700;
   color: var(--foreground-primary);
 }
-
 .asid .topics .topics-item {
   margin: 2rem 0;
   color: var(--foreground-primary);
 }
-
 .asid .topics .topics-item ion-icon {
   color: var(--foreground-secondary);
   margin-top: 1rem;
@@ -569,7 +551,6 @@ main {
   border-radius: 10px;
   margin: 1rem 1rem;
 }
-
 .asid .topics .topics-item .accessibility {
   display: flex;
   align-items: center;
@@ -601,7 +582,6 @@ main {
 }
 
 /*  ========== main-asid-tags ==========*/
-
 .asid .tags {
   margin: 3rem 3rem;
 }
@@ -657,7 +637,6 @@ main {
   font-weight: 500;
   padding: 1rem 1rem;
 }
-
 .asid .tallk .tallk-box ul {
   display: flex;
   margin-top: 1rem;
@@ -686,7 +665,6 @@ main {
 }
 
 /*  ========== main-asid-newsletter ==========*/
-
 .asid .newsletter {
   margin: 3rem 3rem;
 }
@@ -709,7 +687,6 @@ main {
   padding: 1rem 1rem;
   color: var(--foreground-primary);
 }
-
 .asid .newsletter .newsletter-box form input {
   border: none;
   background: var(--action-primary);
@@ -722,7 +699,6 @@ main {
   margin: auto;
   margin-bottom: 1rem;
 }
-
 .asid .newsletter .newsletter-box form button {
   border-radius: 20px;
   padding: 0.6rem 3rem;
@@ -785,7 +761,6 @@ footer {
   font-size: 1.5rem;
   color: var(--foreground-primary);
 }
-
 .footer-copyright {
   max-width: 1150px;
   margin: auto;
